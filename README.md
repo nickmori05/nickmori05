@@ -5,16 +5,15 @@ and reliable data storage.
 
 | Project | What it does | Engineering focus |
 | --- | --- | --- |
-| [Datatrail](https://github.com/nickmori05/datatrail) | Compare CSV snapshots and trace records to their source | Data quality checks, atomic imports, version-range diffs, API and CLI |
-| [Ticket Backend](https://github.com/nickmori05/ticket-backend) | Track support tickets and comments through HTTP or the terminal | Bearer-token auth, attributed status history, idempotent submissions |
-| [JobQueue](https://github.com/nickmori05/jobqueue) | Queue background jobs in SQLite and run them with workers | Atomic claims, bounded retries, attempt history, schema migrations |
-| [Uptime Monitor](https://github.com/nickmori05/uptime-monitor) | Check saved HTTP endpoints individually or in parallel | Bounded concurrency, per-target deadlines, read-only JSON API |
-| [ApplyTrack](https://github.com/nickmori05/applytrack) | Track, update, and delete applications and follow-up dates | SQL filtering, CSV import and export, input validation |
+| [Datatrail](https://github.com/nickmori05/datatrail) | Compare CSV snapshots and trace records to their source | Typed column checks, atomic imports, version-range diffs, API and CLI |
+| [Ticket Backend](https://github.com/nickmori05/ticket-backend) | Track support tickets through HTTP or the terminal | Bearer-token auth, idempotent submissions, transactional outbox with SMTP delivery |
+| [Uptime Monitor](https://github.com/nickmori05/uptime-monitor) | Check saved HTTP endpoints and alert on incidents | Bounded concurrency, deadlines, deduplicated webhook alerts, JSON API and dashboard |
+| [ApplyTrack](https://github.com/nickmori05/applytrack) | Track job applications and follow-up dates | SQLite migrations, CSV import and export, archiving, input validation |
 
-Each project includes runnable examples, automated tests, and notes on its
-design and current limits. Feature work is tracked through branches and pull
-requests with GitHub Actions checks.
+Each project includes a quick start, automated tests, and notes on its design
+and current limits. Feature work goes through branches and pull requests with
+GitHub Actions tests, linting, and Docker checks.
 
 Currently learning: per-user authorization, worker leases and crash recovery,
-and at-least-once delivery. The goal is to understand how a backend behaves when data,
-networks, or dependencies fail.
+and at-least-once delivery. The goal is to understand how a backend behaves
+when data, networks, or dependencies fail.
