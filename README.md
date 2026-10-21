@@ -5,10 +5,10 @@ and reliable data storage.
 
 | Project | What it does | Engineering focus |
 | --- | --- | --- |
-| [Datatrail](https://github.com/nickmori05/datatrail) | Compare CSV snapshots and trace records to their source | Typed column checks, atomic imports, version-range diffs, API and CLI |
-| [Ticket Backend](https://github.com/nickmori05/ticket-backend) | Track support tickets through HTTP or the terminal | Bearer-token auth, idempotent submissions, transactional outbox with SMTP delivery |
-| [Uptime Monitor](https://github.com/nickmori05/uptime-monitor) | Check saved HTTP endpoints and alert on incidents | Bounded concurrency, deadlines, deduplicated webhook alerts, JSON API and dashboard |
-| [ApplyTrack](https://github.com/nickmori05/applytrack) | Track job applications and follow-up dates | SQLite migrations, CSV import and export, archiving, input validation |
+| [Datatrail](https://github.com/nickmori05/datatrail) | Compare CSV snapshots and trace records to their source | Typed column checks, per-record provenance history, streamed CSV diffs, API and CLI |
+| [Ticket Backend](https://github.com/nickmori05/ticket-backend) | Track support tickets through HTTP or the terminal | Scoped, expiring API tokens, idempotent submissions, transactional outbox with SMTP delivery |
+| [Uptime Monitor](https://github.com/nickmori05/uptime-monitor) | Check saved HTTP endpoints and alert on incidents | Bounded concurrency, crash-tested webhook alerts, fault-injection reliability tests, JSON API and dashboard |
+| [ApplyTrack](https://github.com/nickmori05/applytrack) | Track job applications and follow-up dates | Dated status history, response-rate stats, SQLite migrations, CSV import and export |
 
 Each project includes a quick start, automated tests, and notes on its design
 and current limits. Feature work goes through branches and pull requests with
